@@ -17,7 +17,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          apt-get update && apt-get install -y python3 make git libsdl2-dev zip
+          apt-get update && apt-get install -y python3 make git libsdl2-dev zip bsdmainutils
 
       - name: Compile game for Switch
         run: |
