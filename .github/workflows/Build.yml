@@ -21,7 +21,7 @@ jobs:
 
       - name: Compile game for Switch
         run: |
-          make TARGET_SWITCH=1 BETTERCAMERA=1 NODRAWINGDISTANCE=1 TEXTURE_FIX=1 QOL_REDONE=1 -j$(nproc)
+          make TARGET_SWITCH=1 BETTERCAMERA=1 NODRAWINGDISTANCE=1 TEXTURE_FIX=1 QOL_REDONE=1 QOL_FIXES=1 QOL_FEATURES=1 EXT_DEBUG_MODE=1 -j$(nproc)
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
